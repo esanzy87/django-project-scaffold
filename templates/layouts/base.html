@@ -1,0 +1,23 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link href="{% static 'css/reset.css' %}" rel="stylesheet" type="text/css" />
+
+    {% block styles %}
+    {% endblock %}
+  </head>
+  <body>
+    <div id="content-wrap">
+      {% block content %}
+      {% endblock %}
+    </div>
+
+    <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+    {% block scripts %}
+    {% endblock %}
+  </body>
+</html>

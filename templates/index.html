@@ -1,0 +1,17 @@
+{% extends "layouts/base.html" %}
+
+{% block content %}
+<div id="app"></div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+  var e = React.createElement;
+  const appEl = document.querySelector("#app");
+  ReactDOM.render(e(
+    "h1",
+    {},
+    "Hello",
+  ), appEl);
+</script>
+{% endblock %}
